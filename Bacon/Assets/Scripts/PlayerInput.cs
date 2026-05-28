@@ -7,7 +7,7 @@ public class PlayerInput : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -16,7 +16,7 @@ public class PlayerInput : MonoBehaviour
         if (Input.GetKey(KeyCode.W) && canJump)
         {
             canJump = false;
-            body.linearVelocityY = 5;
+            body.linearVelocityY = 7;
         }
 
         if (Input.GetKey(KeyCode.A))
@@ -30,15 +30,28 @@ public class PlayerInput : MonoBehaviour
         }
         if (Input.GetKey(KeyCode.S))
         {
-            body.linearVelocityY = -40;
+            body.linearVelocityY = -10;
         }
     }
-       public void OnCollisionEnter2D(Collision2D collision)
+
+
+
+    public void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Ground"))
         {
-            if (collision.gameObject.CompareTag("Ground"))
+            canJump = true;
+        }
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+           
+            if (body.linearVelocity.y < -0.1f)
             {
-                canJump = true;
+                Destroy(collision.gameObject);
+
+                
+                body.linearVelocity = new Vector2(body.linearVelocity.x, 5f);
             }
         }
     }
-   
+}
