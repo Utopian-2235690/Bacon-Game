@@ -4,6 +4,7 @@ public class PlayerInput : MonoBehaviour
 {
     public Rigidbody2D body;
     private bool canJump = false;
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -36,7 +37,7 @@ public class PlayerInput : MonoBehaviour
 
 
 
-    public void OnCollisionEnter2D(Collision2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Ground"))
         {
@@ -48,8 +49,8 @@ public class PlayerInput : MonoBehaviour
             if (body.linearVelocity.y < -0.1f)
             {
                 Destroy(collision.gameObject);
-
                 
+
                 body.linearVelocity = new Vector2(body.linearVelocity.x, 5f);
             }
         }
