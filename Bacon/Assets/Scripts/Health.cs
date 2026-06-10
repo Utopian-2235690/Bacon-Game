@@ -21,8 +21,8 @@ public class Health : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Enemy"))
         {
-            health.text = "Health: " + Healthy.ToString();
             Healthy = Healthy - 1;
+            health.text = "Health:" + Healthy.ToString();
         }
     }
 }

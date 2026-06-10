@@ -21,8 +21,8 @@ public class EnemyMovement : MonoBehaviour
         if (collision.gameObject.CompareTag("Player") && collision.transform.position.y > transform.position.y)
         {
             {
-                Instantiate(_Food, _FoodEnemy.position, _FoodEnemy.rotation);
                 Destroy(gameObject);
+                Instantiate(_Food, _FoodEnemy.position, _FoodEnemy.rotation);
             }
         }
     }
