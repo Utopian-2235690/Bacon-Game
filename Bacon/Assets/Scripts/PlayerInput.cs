@@ -14,6 +14,7 @@ public class PlayerInput : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Debug.Log(canJump);
         if (Input.GetKey(KeyCode.W) && canJump)
         {
             canJump = false;
@@ -29,10 +30,6 @@ public class PlayerInput : MonoBehaviour
         {
             body.linearVelocityX = 5;
         }
-        if (Input.GetKey(KeyCode.S))
-        {
-            body.linearVelocityY = -10;
-        }
     }
 
 
@@ -43,15 +40,15 @@ public class PlayerInput : MonoBehaviour
         {
             canJump = true;
         }
-        if (collision.gameObject.CompareTag("Enemy"))
+    }
+        private void OnTriggerEnter2D(Collider2D collision) { 
+         if (collision.gameObject.CompareTag("Enemy"))
         {
-           
-            if (body.linearVelocity.y < -0.1f)
+
+            if (body.linearVelocity.y < -0.2f)
             {
                 Destroy(collision.gameObject);
-                
-
-                body.linearVelocity = new Vector2(body.linearVelocity.x, 5f);
+                body.linearVelocity = new Vector2(body.linearVelocity.x, 7f);
             }
         }
     }
