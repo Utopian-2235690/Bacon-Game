@@ -1,14 +1,17 @@
-using UnityEngine;
+ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-   public void PlayTheGame()
+   public void OnStartClick()
     {
         SceneManager.LoadSceneAsync("SampleScene");
     }
-    public void doExitGame()
+    public void OnExitClick()
     {
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#endif
         Application.Quit();
     }
 }
