@@ -14,7 +14,7 @@ public class PlayerInput : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(canJump);
+        
         if (Input.GetKey(KeyCode.W) && canJump)
         {
             canJump = false;
@@ -47,7 +47,6 @@ public class PlayerInput : MonoBehaviour
 
             if (body.linearVelocity.y < -0.2f)
             {
-                Destroy(collision.gameObject);
                 body.linearVelocity = new Vector2(body.linearVelocity.x, 7f);
             }
         }
