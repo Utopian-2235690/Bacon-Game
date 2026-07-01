@@ -12,11 +12,10 @@ GameObject:
   - component: {fileID: 1156289103444850055}
   - component: {fileID: 5938231967374099809}
   - component: {fileID: 7944643180136549027}
-  - component: {fileID: 3426359185559457755}
-  - component: {fileID: 2695626987364888720}
+  - component: {fileID: 5840118482727337007}
   m_Layer: 0
-  m_Name: Burgevil
-  m_TagString: Enemy
+  m_Name: Fries
+  m_TagString: Fries
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31,7 +30,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 8.05, y: 2.99, z: 0}
-  m_LocalScale: {x: 4, y: 4, z: 1}
+  m_LocalScale: {x: 10, y: 10, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -80,12 +79,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 4421961579249758277, guid: e110e4e1118823a4ea498d332c647e5d, type: 3}
+  m_Sprite: {fileID: 8090622000860335674, guid: 9186bcd210d471645afd32ec0e2a7b71, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.25, y: 0.24}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -125,17 +124,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0.072972395}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.28, y: 0.3}
-    newSize: {x: 1, y: 1}
+    oldSize: {x: 0.1, y: 0.03}
+    newSize: {x: 0.25, y: 0.24}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.24344039, y: 0.16391663}
+  m_Size: {x: 0.1, y: 0.03}
   m_EdgeRadius: 0
 --- !u!50 &7944643180136549027
 Rigidbody2D:
@@ -162,9 +161,9 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 1
+  m_CollisionDetection: 0
   m_Constraints: 6
---- !u!114 &3426359185559457755
+--- !u!114 &5840118482727337007
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -173,61 +172,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 6634716210120467028}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 545be9ce9868f3c40aa991ca21669725, type: 3}
+  m_Script: {fileID: 11500000, guid: e2efeb245c205864eac4aa59ee941de5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   body: {fileID: 7944643180136549027}
-  _Food1: {fileID: 2525343860817497166, guid: dd711d3390813f74584813e2af13d89f, type: 3}
-  _Food2: {fileID: 2525938932637055184, guid: f8ca3737691e6d141b6ce1a6cb1ab996, type: 3}
-  _Food3: {fileID: 3573370895436320455, guid: 8c76cecd3ef4c13419c1b7b60f1aa0fd, type: 3}
-  _Food4: {fileID: 4165810681212429890, guid: e3552b6625db9394a9d76838767387c8, type: 3}
-  _Food5: {fileID: 8774323540283422894, guid: 7bcc61e1c91cee84f93d046f0c88b836, type: 3}
-  _Food6: {fileID: 3157518958251978543, guid: 2ab2be9a61d9eaa47b40d20f9c2ad7fd, type: 3}
-  _Speed: -1.25
-  _FoodEnemy: {fileID: 3876041392876994974}
---- !u!61 &2695626987364888720
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6634716210120467028}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: -0.07070605}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.28, y: 0.3}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 0.19617867, y: 0.15858792}
-  m_EdgeRadius: 0
+  _Speed: -3

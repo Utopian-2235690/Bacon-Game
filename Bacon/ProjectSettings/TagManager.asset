@@ -6,7 +6,8 @@ TagManager:
   tags:
   - Ground
   - Enemy
-  - Wall
+  - Boss
+  - Fries
   layers:
   - Default
   - TransparentFX

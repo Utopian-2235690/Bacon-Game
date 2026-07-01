@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: 71765338a6bbf2045a67e4326d71b578
+guid: 9186bcd210d471645afd32ec0e2a7b71
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -409789460342958889
-    second: Komkommer water_0
-  - first:
-      213: 3838457991365531571
-    second: Komkommer water_1
+      213: 8090622000860335674
+    second: fries_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -40,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -103,14 +100,14 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Komkommer water_0
+      name: fries_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 30
-        height: 30
-      alignment: 9
+        width: 10
+        height: 3
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -118,30 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7d41f8f28a2205af0800000000000000
-      internalID: -409789460342958889
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Komkommer water_1
-      rect:
-        serializedVersion: 2
-        x: 15
-        y: 6
-        width: 14
-        height: 11
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3b71a94c431f44530800000000000000
-      internalID: 3838457991365531571
+      spriteID: a3e8d3508d9a74070800000000000000
+      internalID: 8090622000860335674
       vertices: []
       indices: 
       edges: []
@@ -150,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: e37b047bb245284418aa7aa0ffbd4a1a
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -160,8 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Komkommer water_0: -409789460342958889
-      Komkommer water_1: 3838457991365531571
+      fries_0: 8090622000860335674
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

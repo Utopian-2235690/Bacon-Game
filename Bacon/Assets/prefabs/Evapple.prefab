@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 3426359185559457755}
   - component: {fileID: 2695626987364888720}
   m_Layer: 0
-  m_Name: Burgevil
+  m_Name: Evapple
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -80,7 +80,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 4421961579249758277, guid: e110e4e1118823a4ea498d332c647e5d, type: 3}
+  m_Sprite: {fileID: 2163659401177511904, guid: 0537caeb4577db94eb1891a8789dcf72, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -129,13 +129,13 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.28, y: 0.3}
+    oldSize: {x: 0.34, y: 0.27}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.24344039, y: 0.16391663}
+  m_Size: {x: 0.34840298, y: 0.16391663}
   m_EdgeRadius: 0
 --- !u!50 &7944643180136549027
 Rigidbody2D:
@@ -162,7 +162,7 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 1
+  m_CollisionDetection: 0
   m_Constraints: 6
 --- !u!114 &3426359185559457755
 MonoBehaviour:
@@ -183,7 +183,7 @@ MonoBehaviour:
   _Food4: {fileID: 4165810681212429890, guid: e3552b6625db9394a9d76838767387c8, type: 3}
   _Food5: {fileID: 8774323540283422894, guid: 7bcc61e1c91cee84f93d046f0c88b836, type: 3}
   _Food6: {fileID: 3157518958251978543, guid: 2ab2be9a61d9eaa47b40d20f9c2ad7fd, type: 3}
-  _Speed: -1.25
+  _Speed: -1.5
   _FoodEnemy: {fileID: 3876041392876994974}
 --- !u!61 &2695626987364888720
 BoxCollider2D:
@@ -219,15 +219,15 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: -0.07070605}
+  m_Offset: {x: 0, y: -0.06755651}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.28, y: 0.3}
+    oldSize: {x: 0.34, y: 0.27}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.19617867, y: 0.15858792}
+  m_Size: {x: 0.2029562, y: 0.11701362}
   m_EdgeRadius: 0

@@ -1,12 +1,13 @@
 fileFormatVersion: 2
-guid: 545be9ce9868f3c40aa991ca21669725
+guid: e2efeb245c205864eac4aa59ee941de5
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
   defaultReferences:
   - body: {fileID: 7944643180136549027, guid: 55eb750c4790c5344baaa80592e02791, type: 3}
   - _Food: {fileID: 3361482018929248363, guid: ffb48375cb0049c47834086fd0de5e0d, type: 3}
-  - _FoodEnemy: {fileID: 3876041392876994974, guid: 55eb750c4790c5344baaa80592e02791, type: 3}
+  - _FoodEnemy: {fileID: 3876041392876994974, guid: 55eb750c4790c5344baaa80592e02791,
+      type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
